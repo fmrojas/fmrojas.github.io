@@ -1,0 +1,109 @@
+	<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="estilos.css">
+	<script src="prefixfree.js"></script>
+	<!--[if lt IE 9]><script src=”http://HTML5shim.googlecode.com/svn/trunk/HTML5.js”></script><![endif]-->
+	<title>Portafolio</title>
+</head>
+<body>
+	<header id="yo" class="Header">
+		<nav class="MainMenu">
+			<ul class="MainMenu-list">
+				<li class="MainMenu-item">
+					<a class="MainMenu-link" href="#yo">Yo</a>
+				</li>
+				<li class="MainMenu-item">
+					<a class="MainMenu-link" href="#perfil">Perfil</a>
+				</li>
+				<li class="MainMenu-item">
+					<a class="MainMenu-link" href="#trabajo">Trabajo</a>
+				</li>
+				<li class="MainMenu-item">
+					<a class="MainMenu-link" href="#contacto">Contácto</a>
+				</li>
+			</ul>
+		</nav>
+		<figure class="Header-imageContainer icon-uniE601 icon-uniE600">
+			<img src="avatar1.jpg" alt="Imágen Personal" class="Header-image">
+			<figcaption class="Header-imageDescription">
+				<a class="Header-link" href="http://www.twitter.com/f_m_rojas" target="_blank">@f_m_rojas</a>
+			</figcaption>
+			<p class="Header-name">Fabián Mauricio Rojas</p>
+		</figure>
+	</header>
+	<section id="perfil" class="Profile">
+		<h2 class="Profile-title U-title">Mi Perfil</h2>
+		<p class="Profile-description">
+			Hola! Si <span class="Profile-text">llegaste</span> hasta aquí, puedes ver mi portafolio y contactarme.
+		</p>
+		<a class="Profile-link Profile-background1" href="http://www.twitter.com/f_m_rojas" target="_blank">@f_m_rojas</a>
+		<a class="Profile-link Profile-background2" href="http://www.facebook.com/maurorojas" target="_blank">Mauro Rojas</a>
+		<a class="Profile-link Profile-background3" href="http://www.twitter.com/f_m_rojas" target="_blank">@f_m_rojas</a>
+	</section>
+	<section id="trabajo" class="Work">
+		<h2 class="Work-title U-title">Mi trabajo</h2>
+		<aside>
+			<video class="Work-video" width="320" height="240" controls>
+			<source src="JuanTocando.mp4" type="video/mp4">
+			<source src="JuanTocando.ogv" type="video/ogv">
+			<!--Actualiza tu navegador -->
+		</video>
+		</aside>
+		<article class="Work-item">
+			<figure class="Work-imageContainer">
+				<img class="Work-image" src="mejorandola.jpg" alt="es la descripción de mi imágen">
+				<figcaption class="Work-description">Website de fabianrojas.com</figcaption>
+			</figure>
+		</article>
+		<article class="Work-item">
+			<figure class="Work-imageContainer">
+				<img class="Work-image" src="mejorandola.jpg" alt="es la descripción de mi imágen">
+				<figcaption class="Work-description">Website de fabianrojas.com</figcaption>
+			</figure>
+		</article>
+		<article class="Work-item">
+			<figure class="Work-imageContainer">
+				<img class="Work-image" src="mejorandola.jpg" alt="es la descripción de mi imágen">
+				<figcaption class="Work-description">Website de fabianrojas.com</figcaption>
+			</figure>
+		</article>
+		<article class="Work-item">
+			<figure class="Work-imageContainer">
+				<img class="Work-image" src="mejorandola.jpg" alt="es la descripción de mi imágen">
+				<figcaption class="Work-description">Website de fabianrojas.com</figcaption>
+			</figure>
+		</article>
+		<article class="Work-item">
+			<figure class="Work-imageContainer">
+				<img class="Work-image" src="mejorandola.jpg" alt="es la descripción de mi imágen">
+				<figcaption class="Work-description">Website de fabianrojas.com</figcaption>
+			</figure>
+		</article>
+		<article class="Work-item">
+			<figure class="Work-imageContainer">
+				<img class="Work-image" src="mejorandola.jpg" alt="es la descripción de mi imágen">
+				<figcaption class="Work-description">Website de fabianrojas.com</figcaption>
+			</figure>
+		</article>
+	</section>
+	<footer id="contacto" class="Footer">
+		<div class="Footer-left">
+			<h3 class="Footer-title">Contácto</h3>
+			<p class="Footer-description">Si tienes una sugerencia o quieres trabajar conmigo ponte en contácto a través de este formulario</p>
+		</div>
+		<form action="" id="formulario" class="Footer-form">
+			<input id="nombre" class="Footer-formInput" type="text" placeholder="nombre">
+			<input id="email" class="Footer-formInput" type="email" placeholder="email">
+			<textarea id="textarea" class="Footer-textArea" placeholder="motivo"></textarea>
+			<button id="button" class="Footer-button" type="submit">Contactarme</button>
+		</form>
+	</footer>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="scrolltransparencia.js"></script>
+</body>
+</html>
