@@ -54,10 +54,11 @@
 /*HEADER*/
 
 .Header{
-	background-image: url('portada.jpg');
+	background-image: url('portada2.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+  height: 22em;
 	margin-top:3.75em;
 	padding: 0.2em 0 0.5em;
 	text-align: center;
