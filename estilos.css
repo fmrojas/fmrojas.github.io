@@ -123,23 +123,24 @@
 }
 
 .MainMenu-link{
-	color: #00DBFF;
+  border-bottom: none;
+  color: #FAFAFA;
 	line-height: 3.75em;
-	margin-right: .5em;
+	margin-right: 1.5em;
 	text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: border-bottom 1s ease-out;
+  transition: border-bottom 1s ease-out;
 }
 
 .MainMenu-link:hover{
-	background: grey;
-	border-radius: .5em;
-	border-bottom: 1px solid orange;
-	padding: .5em;
-	-webkit-transition: .3s;
+  border-bottom: 1px solid orange;
 
 }
 .MainMenu-list{
-	margin:0;
+	margin:0 4em 0 0;
 	padding: 0;
+  text-align: right;
 }
 
 .MainMenu-scrolled{
@@ -148,60 +149,24 @@
 
 /*UTILITIES */
 .U-title{
-	background: #000000;
-	border-bottom:1.5px dashed #00CCFF;
-	color:#00CCFF;
+	background: #EAEAEA;
+	border-bottom: 1.5px dashed #00CCFF;
+	color: #2F2F2F;
 	display: block;
-	font-size: 1.5em;
-	font-weight: normal;
+	font-size: 2.2em;
+	font-weight: bold;;
 	text-align: center;
+  text-transform: uppercase;
 	padding-bottom: .5em;
 	margin-right: 3em;
 	margin-left: 3em;
-}
-
-/*PROFILE*/
-.Profile{
-	background: #000000;
-	text-align: center;
-	padding-bottom: 1.5em;
-}
-
-.Profile-background1{
-	background: #FF8000;
-}
-
-.Profile-background2{
-	background: #327CBE;
-}
-
-.Profile-background3{
-	background: #002DB2;
-}
-.Profile-description{
-	color:white;
-}
-
-.Profile-link{
-	/*background: orange;*/
-	border-radius: 2em;
-	color:white;
-	display: inline-block;
-	margin-right: .5em;
-	margin-top: .5em;
-	padding: .5em 1em;
-	text-decoration: none;
-}
-
-.Profile-title{
-	margin-top: 0;
 }
 
 /*WORK*/
 .Work{
 	margin-top: 2em;
 	text-align: center;
-	background: #000000;
+	background: #EAEAEA;
 	margin-top: -1.5em;
 }
 
