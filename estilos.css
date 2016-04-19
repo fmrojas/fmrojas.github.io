@@ -152,7 +152,6 @@ body{
 
 /*UTILITIES */
 .U-title{
-	background: #EAEAEA;
 	color: #2F2F2F;
 	display: block;
 	font-size: 2.2em;
@@ -160,6 +159,18 @@ body{
 	text-align: center;
   text-transform: uppercase;
 	padding-bottom: .5em;
+	margin-right: 3em;
+	margin-left: 3em;
+}
+
+.U-title-perfil{
+  color: #FAFAFA;
+	display: block;
+	font-size: 2.2em;
+	font-weight: bold;;
+	text-align: center;
+  text-transform: uppercase;
+	padding: .5em 0 .5em 0;
 	margin-right: 3em;
 	margin-left: 3em;
 }
@@ -234,7 +245,48 @@ body{
     min-height: 260px;
     width: 100%;
 }
+/* Estilos para la sección de perfil*/
+.Perfil{
+  background-color: #7D7D7D;
+  height: 500px;
+}
+.Perfil-container{
+  display: flex;
+  orient: vertical;
+  direction: normal;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
+.Perfil-image{
+  position: relative;
+  bottom: 2.5em;
+}
+.Perfil-title{
+    font-size: 1.5em;
+    margin: 1em auto;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+.Perfil-title:after{
+  background: #f66509;
+    content: '';
+    height: 3px;
+    left: 50%;
+    margin: 0 0 0 -41px;
+    position: absolute;
+    top: 2.1em;
+    width: 92px;
+}
+.Perfil-image-description{
+  border-radius: 50%;
+  height: 350px;
+}
+
+.Perfil-description{
+  color: #FAFAFA;
+}
 /*FOOTER*/
 .Footer{
 	background-color: #2B2E31;
@@ -242,7 +294,6 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
-
 }
 
 .Footer-description{
@@ -317,6 +368,12 @@ input:focus,text-area:focus{
   }
   .Tech-title{
     font-size: 2.2em;
+  }
+  .Perfil-title{
+    font-size: 2.2em;
+  }
+  .Perfil-description{
+    width: 45%;
   }
 }
 
