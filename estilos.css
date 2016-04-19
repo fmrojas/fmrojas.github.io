@@ -50,7 +50,9 @@
     top: 1.45em;
     left: 0;
 }
-
+body{
+  background: #EAEAEA;
+}
 /*HEADER*/
 
 .Header{
@@ -164,13 +166,31 @@
 
 /*Tech*/
 .Tech{
-	margin-top: 2em;
-	text-align: center;
-	background: #EAEAEA;
-	margin-top: -1.5em;
+  margin: 0 auto;
+  max-width: 55em;
+  padding: 1em;
+  width: 90%;
 }
+
+.Tech-wrapper{
+  background: #EAEAEA;
+  display: flex;
+  orient: vertical;
+  direction: normal;
+  flex-direction: column;
+}
+.Tech-item-title {
+    letter-spacing: -1px;
+    padding: .25em .5em;
+    text-transform: uppercase;
+}
+
 .Tech-title{
-  position: relative;
+  font-size: 1.5em;
+    margin: 1em auto;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
 }
 .Tech-title:after{
   background: #f66509;
@@ -183,20 +203,27 @@
     width: 92px;
 }
 
-.Tech-description{
-	font-size: 1.1em:;
-	color:#515151;
-	font-style: italic;
+.Tech-item-summary {
+    color: #7d7d7d;
+    padding: .25em 1em 1em;
 }
 
 .Tech-item{
-	display:inline-block;
-	margin-right: 1.8em;
-	margin-bottom: 1.8em;
+  background: #fff;
+  border-bottom: 4px solid #f66509;
+  margin: .5em;
 }
 
-.Tech-imageContainer{
-	margin: 0;
+.Tech-item-image {
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.Tech-item-image img {
+    max-height: 260px;
+    min-height: 260px;
+    width: 100%;
 }
 
 /*FOOTER*/
@@ -256,69 +283,39 @@ input:focus,text-area:focus{
 	background: #22e3f5;
 }
 
-/*
- /* FORMULARIO DEL NAV
- */
 
-.formulario{
-	display: none;
-	padding: 0 0.5em 0 0;
-	text-align: right;
+@media screen and (min-width: 650px){
+  .Tech {
+    display: flex;
+    orient: horizontal;
+    direction: normal;
+    flex-direction: row;
+    flex-flow: row wrap;
+    pack: center;
+    justify-content: center;
+  }
+  .Tech-item {
+    width: 45%;
+  }
+  .Tech-wrapper {
+    display: flex;
+    orient: horizontal;
+    direction: normal;
+    flex-direction: row;
+    flex-flow: row wrap;
+    pack: center;
+    justify-content: center;
+  }
+  .Tech-title{
+    font-size: 2.2em;
+  }
 }
 
-.formulario input{
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	padding: 0.2em 0.6em;
+@media screen and (max-width: 450px){
+  .MainMenu-list{
+    margin-right: 0;
+  }
 }
-
-.formulario input[type="submit"]{
-	background: #22BCE0;
-	border-color: #22BCE0;
-	box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 20px;
-	font-style: italic;
-	text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 5px;
-	color: white;
-}
-
-@media screen and (min-width: 800px){
-	.Tech{
-		overflow: hidden;
-	}
-	.Tech-item{
-		width: 40%;
-		float:left;
-	}
-	.Tech-item:nth-child(even){
-		margin-right: 2%;
-	}
-
-}
-@media screen and (min-width:1000px){
-
-  .Tech-item:nth-child(even){
-		width: 20%;
-		margin-right: 1%;
-	}
-}
-
-/*Este @media se crea para poder organizar el botón publicar en el responsive*/
-@media screen and (max-width: 414px){
-	.MainMenu{
-
-		text-align: left;
-	}
-
-	.MainMenu-link{
-		margin-right: 0;
-	}
-
-	.Publicar{
-		margin-right: 0;
-	}
-
-}
-
 /*Estos media querys son para organizar mejor los iconos*/
 
 @media screen and (max-width: 337px){
