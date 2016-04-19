@@ -65,21 +65,21 @@
 }
 
 .Header-image{
-	border:5px solid white;
+	border:2px solid #FAFAFA;
 	border-radius: 50%;
+  -webkit-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-moz-transition: all 1s ease;
 
 }
 
 .Header-image:hover{
-	-webkit-transition:1s;
-	-o-transition:1s;
-	-ms-transition:1s;
-	-moz-transition:1s;
-	border-color: orange;
-	-webkit-transform:rotateY(360deg);
-	-o-transform:rotateY(360deg);
-	-moz-transform:rotateY(360deg);
-	-ms-transform:rotateY(360deg);
+	-webkit-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	border-color: #f66509;
 }
 
 .Header-imageContainer{
@@ -123,18 +123,19 @@
 }
 
 .MainMenu-link{
-  border-bottom: none;
+  border-bottom: 1px solid #1E1E1E;
   color: #FAFAFA;
 	line-height: 3.75em;
 	margin-right: 1.5em;
 	text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: border-bottom 1s ease-out;
-  transition: border-bottom 1s ease-out;
+  transition: all 1s ease;
 }
 
 .MainMenu-link:hover{
-  border-bottom: 1px solid orange;
+
+  transition: all 1s ease;
+  border-bottom: 1px solid #f66509;
 
 }
 .MainMenu-list{
@@ -150,7 +151,6 @@
 /*UTILITIES */
 .U-title{
 	background: #EAEAEA;
-	border-bottom: 1.5px dashed #00CCFF;
 	color: #2F2F2F;
 	display: block;
 	font-size: 2.2em;
@@ -162,32 +162,41 @@
 	margin-left: 3em;
 }
 
-/*WORK*/
-.Work{
+/*Tech*/
+.Tech{
 	margin-top: 2em;
 	text-align: center;
 	background: #EAEAEA;
 	margin-top: -1.5em;
 }
+.Tech-title{
+  position: relative;
+}
+.Tech-title:after{
+  background: #f66509;
+    content: '';
+    height: 3px;
+    left: 50%;
+    margin: 0 0 0 -41px;
+    position: absolute;
+    top: 1.5em;
+    width: 92px;
+}
 
-.Work-description{
+.Tech-description{
 	font-size: 1.1em:;
 	color:#515151;
 	font-style: italic;
 }
 
-.Work-item{
+.Tech-item{
 	display:inline-block;
 	margin-right: 1.8em;
 	margin-bottom: 1.8em;
 }
 
-.Work-imageContainer{
+.Tech-imageContainer{
 	margin: 0;
-}
-
-.Work-video{
-	display:none;
 }
 
 /*FOOTER*/
@@ -273,31 +282,21 @@ input:focus,text-area:focus{
 }
 
 @media screen and (min-width: 800px){
-	.Work{
+	.Tech{
 		overflow: hidden;
 	}
-	.Work-item{
+	.Tech-item{
 		width: 40%;
 		float:left;
 	}
-	.Work-item:nth-child(even){
+	.Tech-item:nth-child(even){
 		margin-right: 2%;
 	}
 
 }
 @media screen and (min-width:1000px){
-	.Work-video{
-		display: block;
-		float:right;
-		margin: 0.5em;
-		width: 30%;
-	}
 
-	aside video{
-		width: 100%;
-	}
-
-	.Work-item:nth-child(even){
+  .Tech-item:nth-child(even){
 		width: 20%;
 		margin-right: 1%;
 	}
