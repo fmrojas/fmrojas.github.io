@@ -248,19 +248,24 @@ body{
 /* Estilos para la sección de perfil*/
 .Perfil{
   background-color: #7D7D7D;
-  height: 500px;
+  height: auto;
 }
 .Perfil-container{
   display: flex;
   orient: vertical;
-  direction: normal;
-  flex-direction: row;
-  justify-content: space-around;
+  direction: normal ;
+  flex-direction: column;;
+  justify-content: space-between;;
+  text-align: center;
 }
 
 .Perfil-image{
   position: relative;
   bottom: 2.5em;
+}
+
+.Perfil-image-container{
+  margin-top: 2em;
 }
 .Perfil-title{
     font-size: 1.5em;
@@ -345,6 +350,24 @@ input:focus,text-area:focus{
 
 
 @media screen and (min-width: 650px){
+  .Perfil{
+    display: flex;
+    orient: horizontal;
+    direction: normal;
+    flex-direction: row;
+    flex-flow: row wrap;
+    pack: center;
+    justify-content: center;
+  }
+  .Perfil-container{
+    display: flex;
+    orient: horizontal;
+    direction: normal;
+    flex-direction: row;
+    flex-flow: row wrap;
+    pack: center;
+    justify-content: center;
+  }
   .Tech {
     display: flex;
     orient: horizontal;
