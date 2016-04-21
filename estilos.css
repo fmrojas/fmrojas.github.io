@@ -258,7 +258,9 @@ body{
   justify-content: space-between;;
   text-align: center;
 }
-
+.Perfil-description-subtitulo{
+  font-weight: bold;
+}
 .Perfil-image{
   position: relative;
   bottom: 2.5em;
@@ -287,10 +289,13 @@ body{
 .Perfil-image-description{
   border-radius: 50%;
   height: 350px;
+  width: 272px;
 }
 
 .Perfil-description{
   color: #FAFAFA;
+  text-align: left;
+  margin-bottom: 1em;
 }
 /*FOOTER*/
 .Footer{
@@ -400,15 +405,41 @@ input:focus,text-area:focus{
   }
 }
 
+@media screen and (max-width: 649px){
+  .MainMenu-list{
+    margin-right: 0;
+  }
+  .Perfil-description{
+    position: relative;
+    bottom: 3em;
+    padding-left: 0.5em;
+  }
+}
 @media screen and (max-width: 450px){
   .MainMenu-list{
     margin-right: 0;
+  }
+  .Perfil-description{
+    position: relative;
+    bottom: 3em;
+    padding-left: 0.5em;
+  }
+  .Perfil-description-subtitulo{
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 337px){
   .MainMenu-link{
     margin-right: .5em;
+  }
+  .Perfil-description{
+    position: relative;
+    bottom: 3em;
+    padding-left: 0.5em;
+  }
+  .Perfil-description-subtitulo{
+    text-align: center;
   }
 }
 
