@@ -349,7 +349,7 @@ input:focus,text-area:focus{
 }
 
 
-@media screen and (min-width: 650px){
+@media screen and (min-width: 651px){
   .Perfil{
     display: flex;
     orient: horizontal;
@@ -370,7 +370,7 @@ input:focus,text-area:focus{
   }
   .Perfil-image{
     position: relative;
-    bottom: 2em;
+    bottom: -2.5em;
   }
   .Tech {
     display: flex;
@@ -405,7 +405,7 @@ input:focus,text-area:focus{
   }
 }
 
-@media screen and (max-width: 649px){
+@media screen and (max-width: 650px){
   .MainMenu-list{
     margin-right: 0;
   }
