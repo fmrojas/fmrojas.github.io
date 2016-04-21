@@ -429,7 +429,7 @@ input:focus,text-area:focus{
   }
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 359px){
   .MainMenu-link{
     margin-right: .5em;
   }
