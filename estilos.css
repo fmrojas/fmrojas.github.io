@@ -441,9 +441,6 @@ input:focus,text-area:focus{
   .Perfil-description-subtitulo{
     text-align: center;
   }
-  .MainMenu-list{
-    margin-right: : 2em;
-  }
 }
 
 /*Estos media querys son para organizar mejor los iconos*/
