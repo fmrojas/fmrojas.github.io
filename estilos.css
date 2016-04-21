@@ -441,6 +441,10 @@ input:focus,text-area:focus{
   .Perfil-description-subtitulo{
     text-align: center;
   }
+  .Perfil-image{
+    position: relative;
+    bottom: 2em;
+  }
 }
 
 /*Estos media querys son para organizar mejor los iconos*/
