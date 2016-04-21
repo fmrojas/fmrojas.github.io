@@ -370,7 +370,7 @@ input:focus,text-area:focus{
   }
   .Perfil-image{
     position: relative;
-    bottom: -2.5em;
+    bottom: 2em;
   }
   .Tech {
     display: flex;
