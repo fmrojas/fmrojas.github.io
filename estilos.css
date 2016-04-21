@@ -261,11 +261,6 @@ body{
 .Perfil-description-subtitulo{
   font-weight: bold;
 }
-.Perfil-image{
-  position: relative;
-  bottom: 2.5em;
-}
-
 .Perfil-image-container{
   margin-top: 2em;
 }
@@ -373,6 +368,10 @@ input:focus,text-area:focus{
     pack: center;
     justify-content: center;
   }
+  .Perfil-image{
+    position: relative;
+    bottom: -2.5em;
+  }
   .Tech {
     display: flex;
     orient: horizontal;
@@ -398,6 +397,7 @@ input:focus,text-area:focus{
     font-size: 2.2em;
   }
   .Perfil-title{
+    margin: 0 auto;
     font-size: 2.2em;
   }
   .Perfil-description{
