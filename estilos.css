@@ -414,6 +414,10 @@ input:focus,text-area:focus{
     bottom: 3em;
     padding-left: 0.5em;
   }
+  .Perfil-description-subtitulo{
+    text-align: center;
+  }
+
 }
 @media screen and (max-width: 450px){
   .MainMenu-list{
