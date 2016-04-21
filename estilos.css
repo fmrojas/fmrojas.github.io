@@ -429,7 +429,7 @@ input:focus,text-area:focus{
   }
 }
 
-@media screen and (max-width: 337px){
+@media screen and (max-width: 360px){
   .MainMenu-link{
     margin-right: .5em;
   }
@@ -440,6 +440,9 @@ input:focus,text-area:focus{
   }
   .Perfil-description-subtitulo{
     text-align: center;
+  }
+  .MainMenu-list{
+    margin-left: 0.5em;
   }
 }
 
