@@ -110,7 +110,7 @@ body{
 /* MAIN MENU*/
 
 .MainMenu{
-	background: #1E1E1E;
+	background: #2B2E31;
 	height: 3.75em;
 	left: 0;
 	position: fixed;
@@ -125,7 +125,7 @@ body{
 }
 
 .MainMenu-link{
-  border-bottom: 1px solid #1E1E1E;
+  border-bottom: 1px solid #2B2E31;
   color: #FAFAFA;
 	line-height: 3.75em;
 	margin-right: 1.5em;
@@ -226,6 +226,7 @@ body{
 .Tech-item-summary {
     color: #7d7d7d;
     padding: .25em 1em 1em;
+    text-align: justify;
 }
 
 .Tech-item{
@@ -289,63 +290,15 @@ body{
 
 .Perfil-description{
   color: #FAFAFA;
-  text-align: left;
+  text-align: justify;
   margin-bottom: 1em;
 }
 /*FOOTER*/
 .Footer{
-	background-color: #2B2E31;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	text-align: center;
-}
-
-.Footer-description{
-	display: inline-block;
-}
-
-.Footer-form{
-	text-align:center;
-	display: inline-block;
-	padding: 2em 0;
-}
-
-.Footer-formInput,
-.Footer-textArea{
-	background: white;
-	border:none;
-	display: block;
-	margin:0 auto 1em;
-	border-radius: 2em;
-	padding: .5em;
-}
-
-.Footer-left{
-	display: inline-block;
-	max-width: 32em;
-	text-align: center;
-	vertical-align: top;
-}
-
-.Footer-textArea{
-	resize:none;
-}
-
-.Footer-title{
-	color:white;
-}
-
-.Footer-button{
-	background: orange;
-	color:white;
-	border-radius: 1em;
-	border:none;
-	padding: .5em 1em;
-}
-
-input:focus,text-area:focus{
-	background: #22e3f5;
+    background: #2b2e31;
+    color: #acb3ba;
+    font-size: .9em;
+    padding: 1.5em;
 }
 
 @media screen and (min-width: 1700px){
