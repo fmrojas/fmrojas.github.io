@@ -1,18 +1,18 @@
 /*ICONFONTS*/
 @font-face {
     font-family: 'icomoon';
-    src:url('icomoon.eot?-1lahri');
-    src:url('icomoon.eot?#iefix-1lahri') format('embedded-opentype'),
-        url('icomoon.woff?-1lahri') format('woff'),
-        url('icomoon.ttf?-1lahri') format('truetype'),
-        url('icomoon.svg?-1lahri#icomoon') format('svg');
+    src:    url('fonts/icomoon.eot?czm6u6');
+    src:    url('fonts/icomoon.eot?czm6u6#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?czm6u6') format('truetype'),
+        url('fonts/icomoon.woff?czm6u6') format('woff'),
+        url('fonts/icomoon.svg?czm6u6#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-[class^="icon-"]:after, [class*=" icon-"]:after,
-[class^="icon-"]:before, [class*=" icon-"]:before{
-    font-family: 'icomoon';
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -25,30 +25,23 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-uniE600:after{
-    background: orange;
-    border-radius: 50%;
-    border: 2px solid white;
-    color: white;
-    content: "\e600";
-    font-size: 3.75em;
-    font-weight: lighter;
-    position: absolute;
-    right: 0;
-    top: 1.45em;
+.icon-google-plus2:before {
+    content: "\e900";
 }
-.icon-uniE601:before{
-
-    background: orange;
-    border-radius: 50%;
-    border: 2px solid white;
-    color: white;
-    content: "\e601";
-    font-size: 3.75em;
-    font-weight: lighter;
-    position: absolute;
-    top: 1.45em;
-    left: 0;
+.icon-facebook2:before {
+    content: "\e901";
+}
+.icon-instagram:before {
+    content: "\e902";
+}
+.icon-twitter:before {
+    content: "\e903";
+}
+.icon-github:before {
+    content: "\e904";
+}
+.icon-linkedin:before {
+    content: "\e905";
 }
 body{
   background: #EAEAEA;
@@ -325,7 +318,54 @@ body{
     background: #2b2e31;
     color: #acb3ba;
     font-size: .9em;
-    padding: 1.5em;
+}
+
+.Footer-wrapper{
+    margin: 0 auto;
+    max-width: 55em;
+    width: 90%;
+}
+
+.Content-flex{
+    display: flex;
+    box-orient: vertical;
+    box-direction: normal;
+    flex-direction: column;
+    flex-flow: wrap;
+    box-pack: justify;
+    justify-content: center;
+}
+
+.Footer-content{
+  margin: .5em 0;
+}
+
+.Footer-copy{
+  margin: .5em 0;
+}
+
+.Footer-email{
+  margin: .5em 0;
+}
+.Footer-social{
+  margin: 1em 0 .5em;
+  text-align: center;
+}
+
+.Footer-social-link{
+  border-bottom: 0 !important;
+  font-size: 1.5em;
+  margin: 0 .25em !important;
+}
+
+.Footer-social-link:hover{
+  color: #f66509;
+}
+
+.Footer a{
+  border-bottom: 1px dotted #eaeaea;
+  color: #eaeaea;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 1700px){
@@ -466,22 +506,4 @@ body{
     margin: 0;
 
   }
-}
-
-/*Estos media querys son para organizar mejor los iconos*/
-
-@media screen and (max-width: 337px){
-    .Header-imageContainer{
-        min-width: 280px;
-    }
-    .icon-uniE600:after{
-        font-size: 3em;
-        top: 1.6em;
-        right: 0.09em;
-    }
-    .icon-uniE601:before{
-        font-size: 3em;
-        left: 0.09em;
-    }
-
 }
