@@ -313,6 +313,26 @@ body{
   text-align: justify;
   margin-bottom: 1em;
 }
+
+/*Servicios*/
+.Service{
+  margin: 0 auto;
+  max-width: 80em;
+  padding: 1em;
+  width: 90%;
+}
+.Tech-item-service{
+  background: #fff;
+  border-bottom: 4px solid #f66509;
+  margin: .5em;
+  width: 23%;
+}
+
+.Tech-item-title-service {
+    letter-spacing: -1px;
+    padding: .25em .5em;
+    text-transform: uppercase;
+}
 /*FOOTER*/
 .Footer{
     background: #2b2e31;
@@ -369,6 +389,50 @@ body{
   text-decoration: none;
 }
 
+/*RESPONSIVE*/
+
+/*MEDIA QUERY PARA ORGANIZAR ITEMS DE SERVICIOS*/
+
+@media screen and (max-width: 1383px){
+  .Tech-item-service{
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 963px){
+  .Tech-item-service{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .Service{
+    display: flex;
+    orient: horizontal;
+    direction: normal;
+    flex-direction: row;
+    flex-flow: row wrap;
+    pack: center;
+    justify-content: center;
+  }
+  .Tech-wrapper {
+    display: flex;
+    orient: horizontal;
+    direction: normal;
+    flex-direction: row;
+    flex-flow: row wrap;
+    pack: center;
+    justify-content: center;
+  }
+  .Tech-item-service{
+    width: 70%;
+  }
+}
+@media screen and (max-width: 450px){
+  .Tech-item-service{
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1700px){
   .Perfil-image{
     position: relative;
@@ -487,7 +551,7 @@ body{
     background: #2B2E31;
     text-align: center;
     position: absolute;
-    top: 4em;
+    top: 3.8em;
     width: 70%;
     margin-left: -70%;
     transition: all 0.5s;
