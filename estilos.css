@@ -226,14 +226,14 @@ body{
 }
 
 .Tech-title{
-  font-size: 1.5em;
+    font-size: 1.5em;
     margin: 1em auto;
     position: relative;
     text-align: center;
     text-transform: uppercase;
 }
 .Tech-title:after{
-  background: #f66509;
+    background: #f66509;
     content: '';
     height: 3px;
     left: 50%;
