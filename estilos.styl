@@ -1,0 +1,537 @@
+/*ICONFONTS*/
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?czm6u6');
+    src:    url('fonts/icomoon.eot?czm6u6#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?czm6u6') format('truetype'),
+        url('fonts/icomoon.woff?czm6u6') format('woff'),
+        url('fonts/icomoon.svg?czm6u6#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-google-plus2:before
+    content "\e900"
+
+.icon-facebook2:before
+    content "\e901"
+
+.icon-instagram:before
+    content "\e902"
+
+.icon-twitter:before
+    content "\e903"
+
+.icon-github:before
+    content "\e904"
+
+.icon-linkedin:before
+    content "\e905"
+
+body
+  background #EAEAEA
+
+/*HEADER*/
+
+.Header
+  background-image url('portada2.jpg')
+  background-position center
+  background-repeat no-repeat
+  background-size cover
+  height 22em
+  margin-top 3.75em
+  padding 0.2em 0 0.5em
+  text-align center
+
+.MainMenu label
+  display none
+  width 30px
+  height 30px
+  padding 10px
+  margin-top 0.3em
+
+.MainMenu label:hover
+  cursor pointer
+  background rgba(0,0,0,0.3)
+
+.Header-image
+  border 2px solid #FAFAFA
+  border-radius 50%
+  transition all 1s ease
+
+.Header-image:hover
+	transition all 1s ease
+	border-color #f66509
+
+.Header-imageContainer
+    margin-left 0
+    margin-right 0
+    display inline-block
+    position relative
+    min-width 320px
+
+.Header-name,.Header-link
+	color white
+
+.Header-link
+	font-size 2.2em
+	font-weight bold
+	text-decoration none
+
+.Header-Name
+	font-size 1.5em
+	font-weight lighter
+
+/* MAIN MENU*/
+#btn-menu
+  display none
+
+.MainMenu
+  background #2B2E31
+  height 3.75em
+  left 0
+  position fixed
+  right 0
+  text-align center
+  top 0
+  z-index 1
+  border-bottom 1px solid #f66509
+
+.MainMenu-item
+	display: inline-block
+
+.MainMenu-link
+  border-bottom 1px solid #2B2E31
+  color #FAFAFA
+  line-height 3.75em
+  margin-right 1.5em
+  text-decoration none
+  text-transform uppercase
+  transition all 1s ease
+
+.MainMenu-link-scrolled
+  border-bottom none
+
+.MainMenu-link-scrolled:hover
+  transition-property none !important
+  border-bottom none !important
+  transition all 1s ease
+  color #f66509
+
+.MainMenu-link:hover
+  transition all 1s ease
+  border-bottom 1px solid #f66509
+
+.MainMenu-list
+  margin 0 4em 0 0
+  padding 0
+  text-align right
+
+.MainMenu-scrolled
+  background-color rgba(30,30,30,0.6)
+  border-bottom none
+
+/*UTILITIES */
+.U-title
+  color #2F2F2F
+  display block
+  font-size 2.2em
+  font-weight bold
+  text-align center
+  text-transform uppercase
+  padding-bottom .5em
+  margin-right 3em
+  margin-left 3em
+
+.U-title-perfil
+  color #F66509
+  display block
+  font-size 2.2em
+  font-weight bold
+  text-align center
+  text-transform uppercase
+  padding .5em 0 .5em 0
+  margin-right 3em
+  margin-left 3em
+
+/*Tech*/
+.Tech
+  margin 0 auto
+  max-width 55em
+  padding 1em
+  width 90%
+
+.Tech-wrapper
+  background #EAEAEA
+  display flex
+  orient vertical
+  direction normal
+  flex-direction column
+
+.Tech-item-title
+  letter-spacing -1px
+  padding .25em .5em
+  text-transform uppercase
+
+.Tech-item-title a
+  color #222
+  text-decoration none
+
+.Tech-item-title a:hover
+  color #F66509
+
+.Tech-title
+    font-size 1.5em
+    margin 1em auto
+    position relative
+    text-align center
+    text-transform uppercase
+
+.Tech-title:after
+    background #f66509
+    content ''
+    height 3px
+    left 50%
+    margin 0 0 0 -41px
+    position absolute
+    top 1.5em
+    width 92px
+
+.Tech-item-summary
+    color #7d7d7d
+    padding .25em 1em 1em
+    text-align justify
+
+.Tech-item
+  background #fff
+  border-bottom 4px solid #f66509
+  margin .5em
+
+.Tech-item-image
+    margin 0
+    overflow hidden
+    width 100%
+
+.Tech-item-image img
+    max-height 260px
+    min-height 260px
+    width 100%
+
+/* Estilos para la sección de perfil*/
+.Perfil
+  background-color #2b2e31
+  height auto
+
+.Perfil-container
+  display flex
+  orient vertical
+  direction normal
+  flex-direction column
+  justify-content space-between
+  text-align: center
+
+.Perfil-description-subtitulo
+  font-weight bold
+  color #f66509
+
+.Perfil-image-container
+  margin-top 2em
+
+.Perfil-title
+    font-size 1.5em
+    margin 1em auto
+    position relative
+    text-align center
+    text-transform uppercase
+
+.Perfil-title:after
+  background #FAFAFA
+  content ''
+  height 3px
+  left 50%
+  margin 0 0 0 -41px
+  position absolute
+  top 2.1em
+  width 92px
+
+.Perfil-image-description
+  border-radius 50%
+  height 350px
+  width 272px
+
+
+.Perfil-description
+  color #FAFAFA
+  text-align justify
+  margin-bottom 1em
+
+
+/*Servicios*/
+.Service
+  margin 0 auto
+  max-width 80em
+  padding 1em
+  width 90%
+
+.Tech-item-service
+  background #fff
+  border-bottom 4px solid #f66509
+  margin .5em
+  width 23%
+
+
+.Tech-item-title-service
+    letter-spacing -1px
+    padding .25em .5em
+    text-transform uppercase
+
+/*FOOTER*/
+.Footer
+    background #2b2e31
+    color #acb3ba
+    font-size .9em
+
+
+.Footer-wrapper
+    margin 0 auto
+    max-width 55em
+    width 90%
+
+.Content-flex
+    display flex
+    box-orient vertical
+    box-direction normal
+    flex-direction column
+    flex-flow wrap
+    box-pack justify
+    justify-content center
+
+.Footer-content
+  margin .5em 0
+
+.Footer-copy
+  margin .5em 0
+
+
+.Footer-email
+  margin .5em 0
+  text-align center
+
+.Footer-social
+  margin 1em 0 .5em
+  text-align center
+
+.Footer-social-link
+  border-bottom 0 !important
+  font-size 1.5em
+  margin 0 .25em !important
+
+
+.Footer-social-link:hover
+  color #f66509
+
+
+.Footer a
+  border-bottom 1px dotted #eaeaea
+  color #eaeaea
+  text-decoration none
+
+
+/*RESPONSIVE*/
+
+/*MEDIA QUERY PARA ORGANIZAR ITEMS DE SERVICIOS*/
+
+@media screen and (max-width: 1383px){
+  .Tech-item-service{
+    width 33%
+  }
+}
+
+@media screen and (max-width: 963px){
+  .Tech-item-service{
+    width: 50%
+  }
+}
+
+@media screen and (max-width: 650px){
+  .Service{
+    display flex
+    orient horizontal
+    direction normal
+    flex-direction row
+    flex-flow row wrap
+    pack center
+    justify-content center
+  }
+  .Tech-wrapper {
+    display flex
+    orient horizontal
+    direction normal
+    flex-direction row
+    flex-flow row wrap
+    pack center
+    justify-content center
+  }
+  .Tech-item-service{
+    width 70%
+  }
+}
+@media screen and (max-width: 450px){
+  .Tech-item-service{
+    width 100%
+  }
+}
+@media screen and (min-width: 1700px){
+  .Perfil-image{
+    position relative
+    bottom -0.5em
+  }
+}
+@media screen and (min-width: 651px){
+  .Perfil{
+    display flex
+    orient horizontal
+    direction normal
+    flex-direction row
+    flex-flow row wrap
+    pack center
+    justify-content center
+  }
+  .Perfil-container{
+    display flex
+    orient horizontal
+    direction normal
+    flex-direction row
+    flex-flow row wrap
+    pack center
+    justify-content center
+  }
+  .Perfil-image{
+    position relative
+    /*bottom -2.5em*/
+  }
+  .Tech {
+    display flex
+    orient horizontal
+    direction normal
+    flex-direction row
+    flex-flow row wrap
+    pack center
+    justify-content center
+  }
+  .Tech-item {
+    width 45%
+  }
+  .Tech-wrapper {
+    display flex
+    orient horizontal
+    direction normal
+    flex-direction row
+    flex-flow row wrap
+    pack center
+    justify-content center
+  }
+  .Tech-title{
+    font-size 2.2em
+  }
+  .Perfil-title{
+    margin 0 auto
+    font-size 2.2em
+  }
+  .Perfil-description{
+    width 45%
+  }
+}
+
+@media screen and (max-width: 650px){
+  .Perfil-description{
+    position relative
+    bottom 3em
+    padding-left 0.5em
+  }
+  .Perfil-description-subtitulo{
+    text-align center
+  }
+
+  .Perfil-image{
+    position relative
+    bottom 2em
+  }
+
+}
+@media screen and (max-width: 450px){
+
+  .Perfil-description{
+    position relative
+    bottom 3em
+    padding-left 0.5em
+  }
+  .Perfil-description-subtitulo{
+    text-align center
+  }
+  .Perfil-image{
+    position relative
+    bottom 2em
+  }
+}
+
+@media screen and (max-width: 359px){
+
+  .Perfil-description{
+    position relative
+    bottom 3em
+    padding-left 0.5em
+  }
+  .Perfil-description-subtitulo{
+    text-align center
+  }
+  .Perfil-image{
+    position relative
+    bottom 2em
+  }
+}
+/*Media query para el menu desplegable con responsive*/
+@media (max-width: 768px){
+  .MainMenu label{
+    display block
+    }
+  .MainMenu-list{
+    background #2B2E31
+    text-align center
+    position absolute
+    top 3.8em
+    width 70%
+    margin-left -70%
+    transition all 0.5s
+  }
+  .MainMenu-item{
+    display block
+    border-bottom 1px solid #f66509
+  }
+  .MainMenu-link:hover{
+    border-bottom none
+  }
+  .MainMenu-link:active{
+    transition none !important
+  }
+
+  #btn-menu:checked ~ .MainMenu-list{
+    margin 0
+
+  }
+}
