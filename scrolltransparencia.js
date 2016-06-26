@@ -10,6 +10,5 @@ $(document).ready(function(){
             $('.MainMenu-link').removeClass('MainMenu-link-scrolled');
         }
     }
-
-    }
+  }
 )
