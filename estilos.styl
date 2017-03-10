@@ -49,7 +49,10 @@ body
 
 /*HEADER*/
 
-.Header
+.Background-imageHeader-responsive
+  display none
+
+.Background-imageHeader
   background-image url('portada2.jpg')
   background-position center
   background-repeat no-repeat
@@ -87,7 +90,7 @@ body
     min-width 320px
 
 .Header-name,.Header-link
-	color white
+	color #241810;
 
 .Header-link
 	font-size 2.2em
@@ -160,7 +163,7 @@ body
   margin-left 3em
 
 .U-title-perfil
-  color #F66509
+  color #fd7800
   display block
   font-size 2.2em
   font-weight bold
@@ -197,7 +200,7 @@ body
   color #F66509
 
 .Tech-title
-    font-size 1.5em
+    font-size 2.2em
     margin 1em auto
     position relative
     text-align center
@@ -235,7 +238,7 @@ body
 
 /* Estilos para la sección de perfil*/
 .Perfil
-  background-color #2b2e31
+  background-color #293037
   height auto
 
 .Perfil-container
@@ -248,20 +251,20 @@ body
 
 .Perfil-description-subtitulo
   font-weight bold
-  color #f66509
+  color #ffffff
 
 .Perfil-image-container
   margin-top 2em
 
 .Perfil-title
-    font-size 1.5em
+    font-size 2.2em
     margin 1em auto
     position relative
     text-align center
     text-transform uppercase
 
 .Perfil-title:after
-  background #FAFAFA
+  background #bbbbbb
   content ''
   height 3px
   left 50%
@@ -277,7 +280,7 @@ body
 
 
 .Perfil-description
-  color #FAFAFA
+  color #bbbbbb
   text-align justify
   margin-bottom 1em
 
@@ -301,6 +304,25 @@ body
     padding .25em .5em
     text-transform uppercase
 
+  /*Estilos sesión de proyectos*/
+
+  .Proyect-link
+    text-decoration none
+    color #222222
+  .Proyect-link:hover
+    color #f66509
+/*PROYECT*/
+.Proyect
+  background-color white
+.Tech-wrapperProyect
+  background-color white
+  display flex
+  orient horizontal
+  direction normal
+  flex-direction row
+  flex-flow row wrap
+  pack center
+  justify-content center
 /*FOOTER*/
 .Footer
     background #2b2e31
@@ -355,6 +377,12 @@ body
 
 /*RESPONSIVE*/
 
+/*CENTER FOR TITLE ARTICLES*/
+@media (max-width: 489px){
+.Tech-item-title-service{
+  text-align: center;
+}
+}
 /*MEDIA QUERY PARA ORGANIZAR ITEMS DE SERVICIOS*/
 
 @media screen and (max-width: 1383px){
@@ -450,13 +478,6 @@ body
     pack center
     justify-content center
   }
-  .Tech-title{
-    font-size 2.2em
-  }
-  .Perfil-title{
-    margin 0 auto
-    font-size 2.2em
-  }
   .Perfil-description{
     width 45%
   }
@@ -547,5 +568,39 @@ body
   #btn-menu:checked ~ .MainMenu-list{
     margin 0
 
+  }
+}
+  /*MEDIA QUERYS BACKGORUND IMAGE HEADER*/
+
+@media (max-width:400px){
+  .Background-imageHeader{
+    display: none !important;
+  }
+  .Background-imageHeader::after{
+    display: none !important;
+  }
+  .Background-imageHeader-responsive{
+    display: block;
+    position: relative;
+    text-align: center;
+    height: 25em;
+  }
+  .Background-imageHeader-responsive::after{
+    content: "";
+    background: url("portada2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    opacity: 0.5;
+    z-index: -1;
+  }
+  .Header-imageContainer{
+    text-align: center;
+    top: 58px;
   }
 }
